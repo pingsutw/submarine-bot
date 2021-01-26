@@ -1,4 +1,4 @@
-name: hello-submarine
+name: Publish submarine docker images
 
 on:
   push:
