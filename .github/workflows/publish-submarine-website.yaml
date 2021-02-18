@@ -42,16 +42,11 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           echo "${{ secrets.GH_PAGES_DEPLOY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          cat <<EOT >> ~/.ssh/config
-          Host github.com
-          HostName github.com
-          IdentityFile ~/.ssh/id_rsa
-          EOT
       - name: Release to GitHub Pages
         env:
           USE_SSH: true
           GIT_USER: pingsutw
-          DEPLOYMENT_BRANCH: asf-site
+          DEPLOYMENT_BRANCH: master
         run: |
           cd test-website
           git config --global user.email "pingsutw@gihub.com"
@@ -63,4 +58,4 @@ jobs:
           else
           npm i
           fi
-          # yarn deploy
+          yarn deploy

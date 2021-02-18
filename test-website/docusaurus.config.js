@@ -1,13 +1,13 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://pingsutw.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'pingsutw', // Usually your GitHub org/user name.
+  projectName: 'pingsutw.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -94,7 +94,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/pingsutw/pingsutw.github.io/tree/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
