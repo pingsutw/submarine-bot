@@ -49,8 +49,8 @@ jobs:
           DEPLOYMENT_BRANCH: master
         run: |
           cd test-website
-          git config --global user.email "pingsutw@gihub.com"
-          git config --global user.name "Kevin Su"
+          git config --global user.email "pingsutw@apache.org"
+          git config --global user.name "pingsutw"
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
