@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: true
     env:
-      SUBMARINE_VERSION: 0.6.0_SNAPSHOT 
+      SUBMARINE_VERSION: 0.6.0-SNAPSHOT 
     steps:
       - name: Check out code
         uses: actions/checkout@v2
